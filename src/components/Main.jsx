@@ -12,9 +12,11 @@ const Main = () => {
     <div className="w-full h-screen bg-white/40 absolute top-0 left-0">
       
     
-      <div className="max-w-[800px] m-auto h-full w-full flex flex-col justify-center items-center lg: items-start items-center">
-        <h1 className='sm: text-4xl  text-3xl font-bold text-grey-500'>Jonathon Liu </h1>
-        <h2 className='flex sm:text-3xl text:2xl pt-4 flex text-grey-400'>I am a<TypeAnimation
+      <div className="max-w-[800px] m-auto h-full w-full flex flex-col justify-center sm:items-start items-center ">
+        <h1 className='sm:text-4xl  text-4xl font-bold text-grey-500'>Jonathon Liu </h1>
+        <div className='flex pt-4 text-2xl '>
+          <h2 className=' text-grey-400'>I am a</h2>
+        <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Software Developer',
@@ -27,12 +29,13 @@ const Main = () => {
         1000
       ]}
       wrapper="span"
-      speed={50}
+      speed={40}
       cursor={true}
-      style={{ fontSize: '1em', paddingLeft: '5px' }}
+      style={{ fontSize: '1em', paddingLeft: '5px', color:"#00009b"}}
       repeat={Infinity}
+      
     />
-     </h2>
+     </div>
      <div className="cursor:pointer flex justify-between pt-6 w-[200px]">
     <FaGithub className="cursor-pointer" size={25} />
     <FaLinkedin className="cursor-pointer" size={25}/>

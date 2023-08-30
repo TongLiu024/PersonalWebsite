@@ -1,7 +1,7 @@
 import React from 'react'
 import WorkData from './WorkData'
 
-const WorkData = [
+const WorkItems = [
     {
         year: "2021/01 - 2022/12",
         title: "Analytical Testing Technologist",
