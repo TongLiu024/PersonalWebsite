@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation'
 import {FaLinkedin, FaGithub, FaInstagram} from 'react-icons/FA'
 
 // w: full =width: 100%; means be as big as the parent element
+//problems: auto resize  
 const Main = () => {
   return (
   <div id="main">
@@ -12,10 +13,10 @@ const Main = () => {
     <div className="w-full h-screen bg-white/40 absolute top-0 left-0">
       
     
-      <div className="max-w-[800px] m-auto h-full w-full flex flex-col justify-center sm:items-start items-center ">
-        <h1 className='sm:text-4xl  text-4xl font-bold text-grey-500'>Jonathon Liu </h1>
+      <div className="max-w-[800px] m-auto h-full w-full flex flex-col justify-center items-center ">
+        <h1 className='sm:text-4xl  text-4xl font-bold text-black'>Jonathon Liu </h1>
         <div className='flex pt-4 text-2xl '>
-          <h2 className=' text-grey-400'>I am a</h2>
+          <h2 className=' text-black'>I am a</h2>
         <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
