@@ -12,9 +12,9 @@ const WorkItems = [
 
     {
        year: " 2018/09 - 2020/12",
-       title: "Materials Engineering Researcher",
+       title: "Research Scientist",
        duration: "2 year & 4 months",
-       details: "In this experience, I undertook the roles to support principlal investigators with research innovation, experimental design, analytical method optimization. I innovated and implemented two biopolymer based technology "
+       details: "In this experience, I undertook the roles to support principlal investigators with research innovation, experimental design, analytical method optimization. I innovated and implemented two biopolymer based technology and updated technology  "
        
     },
 
