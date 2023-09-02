@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import {AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineComment} from "react-icons/ai"
+import {AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail} from "react-icons/ai"
+import {IoIosSchool} from 'react-icons/io'
 import { GrProjects } from 'react-icons/gr'
 import { BsPerson } from 'react-icons/bs'
+import resume from '../assets/resume_TL.pdf'
 
 
 /* justify-items: move all element within to the left, center or right horizontally
@@ -25,27 +27,33 @@ const Sidenav = () => {
   
     {nav? (
     <div className='fixed w-full h-screen bg-white/80 flex flex-col justify-center items-center z-20 '>
-      <a href="#main" className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+      <a href="#main" onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
         <AiOutlineHome size={20}/>
         <span className='pl-4'>Home</span>
       </a>
+
+      <a href="#education" onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+        <IoIosSchool size={20}/>
+        <span className='pl-4'>Education</span>
+      </a>
+     
    
-      <a href="#work" className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+      <a href="#work" onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
         <GrProjects size={20}/>
         <span className='pl-4'>Work</span>
       </a>
      
-      <a href="#projects" className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+      <a href="#projects" onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
         <AiOutlineProject size={20}/>
         <span className='pl-4'>Projects</span>
       </a>
 
-      <a href="#resume" className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+      <a href={resume} download onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
         <BsPerson size={20}/>
         <span className='pl-4'>Resume</span>
       </a>
 
-      <a href="#contact" className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
+      <a href="#contact" onClick={handleNav} className='w-[75%] flex items-center justify-center rounded-full shadow-lg bg-purple-50 shadow-grey-400 cursor-pointer m-2 p-4 hover:scale-110 ease-in duration-200'>
         <AiOutlineMail size={20}/>
         <span className='pl-4'>Contact</span>
       </a>
@@ -62,6 +70,11 @@ const Sidenav = () => {
         <AiOutlineHome size= {20}/>
       </a>
 
+      <a href="#education" className="rounded-full bg-purple-200 shadow:lg shadow-grey-500 cursor:pointer hover:scale-110 ease-in duration-300 m-4 p-4">
+        <IoIosSchool size= {20}/>
+      </a>
+
+
       <a href="#work" className="rounded-full bg-purple-200 shadow:lg shadow-grey-500 cursor:pointer hover:scale-110 ease-in duration-300 m-4 p-4">
         <GrProjects size= {20}/>
       </a>
@@ -70,7 +83,7 @@ const Sidenav = () => {
         <AiOutlineProject size= {20}/>
       </a>
 
-      <a href="#resume" className="rounded-full bg-purple-200 shadow:lg shadow-grey-500 cursor:pointer hover:scale-110 ease-in duration-300 m-4 p-4">
+      <a href={resume} download className="rounded-full bg-purple-200 shadow:lg shadow-grey-500 cursor:pointer hover:scale-110 ease-in duration-300 m-4 p-4">
         <BsPerson size= {20}/>
       </a>
 

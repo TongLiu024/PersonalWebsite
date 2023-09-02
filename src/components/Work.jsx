@@ -14,7 +14,7 @@ const WorkItems = [
        year: " 2018/09 - 2020/12",
        title: "Research Scientist",
        duration: "2 year & 4 months",
-       details: "In this experience, I undertook the roles to support principlal investigators with research innovation, experimental design, analytical method optimization. I innovated and implemented two biopolymer based technology that secures substantial reseasrch funding and filling of patents "
+       details: "I served as a key member of an interdisciplinary research team, directly supporting PIs in developing innovative biopolymer technoloiges. My role involved dissecting large data sets to optimize experimental designs and methodologies, as well as mentoring junior team members. I also translated our research into real-world applications by advancing our projects from theoretical concepts to patented, actionable technologies. "
        
     },
 
@@ -22,7 +22,7 @@ const WorkItems = [
 
 const Work = () => {
   return (
-    <div id="work" className='max-w-[1100px] m-auto md:pl-20 p-4 py-16'>
+    <div id="work" className='max-w-[1080px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='font-bold text-4xl text-center text-black pb-10' >Work Experience</h1>
       {WorkItems.map((wk, idx) => (
         <WorkData 

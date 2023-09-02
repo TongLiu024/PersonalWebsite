@@ -43,10 +43,9 @@ const projectItems = [
 
 const Projects = () => {
   return (
-    <div id="projects" className='max-w-[1040px] m-auto md:pl-20 p-4 py-18'>
+    <div id="projects" className='max-w-[1080px] m-auto md:pl-20 p-4 py-18'>
         <h1 className='text-4xl py-4 px-2 mb-10 text-center text-black font-bold '>Technical Projects</h1>
-        <p className='text-center py-6'> the following projects showcases my technical skillsets
-         </p>
+       
          <div className='grid sm:grid-cols-2  gap-14'>
             {projectItems.map(
                 (project, idx) => (
