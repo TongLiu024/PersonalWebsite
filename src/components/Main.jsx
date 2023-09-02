@@ -26,7 +26,7 @@ const Main = () => {
         2000,
         'Chemical Engineer 🔩',
         1000,
-        'Tech Enthusiast 📱',
+        'Programmer 📱',
         1000
       ]}
       wrapper="span"
@@ -38,9 +38,16 @@ const Main = () => {
     />
      </div>
      <div className="cursor:pointer flex justify-between pt-6 w-[200px]">
+    <a href="https://github.com/TongLiu024" target="_blank">
     <FaGithub className="cursor-pointer" size={25} />
+    </a>
+    <a href="https://www.linkedin.com/in/tong-jonathon-liu-7037a7113/" target="_blank">
     <FaLinkedin className="cursor-pointer" size={25}/>
-    <FaInstagram className="cursor-pointer" size={25}/>
+    </a>
+    <a href="https://www.instagram.com/yugiri96/" target="_blank">
+      <FaInstagram className="cursor-pointer" size={25}/>
+      </a>
+    
     </div>
     </div>
    
