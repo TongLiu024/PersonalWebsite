@@ -1,8 +1,19 @@
 #Personal portolio website
 
-Hello, This is Tong Liu, A former material scientist and chemist, who are currently on the journey to become a software developer.
+Hello, This is Jonathon, A former material scientist and chemist. I am on a journey to become a software developer
+
 
 This personal website will guide you through my professional profile and tech portfolio. 
+
+
+
+
+
+
+
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
